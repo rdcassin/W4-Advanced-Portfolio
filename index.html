@@ -26,7 +26,7 @@
           <img id="personal-logo" src="./assets/logo.svg" alt="" />
         </figure>
         <ul class="nav__link--list">
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -35,7 +35,7 @@
           </li>
           <li class="nav__link">
             <a
-              href="#"
+              href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Projects</a
             >
@@ -74,7 +74,7 @@
             >
               <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="https://github.com/rdcassin" class="social__link click">
+            <a href="https://github.com/rdcassin" target="_blank" class="social__link click">
               <i class="fa-brands fa-github"></i>
             </a>
             <a
@@ -87,9 +87,11 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click" onclick="toggleModal()">
-        <i class="fa-solid fa-envelope"></i>
-      </button>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fa-solid fa-envelope"></i>
+        </button>
+      </a>
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
@@ -288,24 +290,28 @@
           <div class="footer__social--list">
             <a
               href="https://github.com/rdcassin"
+              target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Github
             </a>
             <a
               href="https://www.linkedin.com/in/douglascassingham/"
+              target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               LinkedIn
             </a>
             <a
-              href="https://github.com/rdcassin"
+              href="#"
+              onclick="toggleModal()"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Contact
             </a>
             <a
-              href="https://github.com/rdcassin"
+              href="#"
+              target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Resume
